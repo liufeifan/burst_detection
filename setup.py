@@ -2,7 +2,7 @@
 from setuptools import setup
 
 def readme():
-    with open('README.rst','rb') as f:
+    with open('README.rst', encoding='utf-8', mode = 'r') as f:
         return f.read()
 
 setup(name='burst_detection',
