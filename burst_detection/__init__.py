@@ -26,7 +26,7 @@ def tau(i1,i2,gamma,n):
 #    r: number of target events in each time period (1xn)
 #    p: expected proportions of each state (1xk)
 def fit(d,r,p):
-    return -np.log(np.float(c.binomial(d,r)) * (p**r) * (1-p)**(d-r))
+    return -np.log(np.float(c.binomial(d,r) * (p**r) * (1-p)**(d-r)))
 
 
 #define the burst detection function for a two-state automaton
